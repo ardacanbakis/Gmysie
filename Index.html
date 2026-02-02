@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kettlebell Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏋️ Kettlebell Fitness Tracker</h1>
+
+<section>
+  <h2>⏱️ Workout Timer</h2>
+  <input type="number" id="timerMinutes" placeholder="Minutes">
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+  <p id="timerDisplay">00:00</p>
+</section>
+
+<section>
+  <h2>🏋️ Workout Log</h2>
+  <input id="exercise" placeholder="Exercise">
+  <input id="sets" placeholder="Sets">
+  <input id="reps" placeholder="Reps">
+  <input id="weight" placeholder="Weight (kg)">
+  <button onclick="addWorkout()">Add Workout</button>
+  <ul id="workoutList"></ul>
+</section>
+
+<section>
+  <h2>🍽️ Meal Tracker</h2>
+  <input id="meal" placeholder="Meal">
+  <input id="calories" placeholder="Calories">
+  <input id="protein" placeholder="Protein (g)">
+  <button onclick="addMeal()">Add Meal</button>
+  <ul id="mealList"></ul>
+  <p id="mealTotals"></p>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
